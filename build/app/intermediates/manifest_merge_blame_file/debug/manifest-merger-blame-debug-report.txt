@@ -1,0 +1,440 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.webview_in_flutter"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="20"
+9        android:targetSdkVersion="33" />
+10    <!--
+11         The INTERNET permission is required for development. Specifically,
+12         the Flutter tool needs it to communicate with the running application
+13         to allow setting breakpoints, to provide hot reload, etc.
+14    -->
+15
+16    <uses-permission android:name="android.permission.INTERNET" />
+16-->/Users/mayank/Desktop/flutter-webview-blob-download/android/app/src/main/AndroidManifest.xml:4:5-66
+16-->/Users/mayank/Desktop/flutter-webview-blob-download/android/app/src/main/AndroidManifest.xml:4:22-64
+17    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+17-->/Users/mayank/Desktop/flutter-webview-blob-download/android/app/src/main/AndroidManifest.xml:5:1-76
+17-->/Users/mayank/Desktop/flutter-webview-blob-download/android/app/src/main/AndroidManifest.xml:5:18-73
+18    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+18-->/Users/mayank/Desktop/flutter-webview-blob-download/android/app/src/main/AndroidManifest.xml:6:1-77
+18-->/Users/mayank/Desktop/flutter-webview-blob-download/android/app/src/main/AndroidManifest.xml:6:18-74
+19    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+19-->/Users/mayank/Desktop/flutter-webview-blob-download/android/app/src/main/AndroidManifest.xml:7:1-75
+19-->/Users/mayank/Desktop/flutter-webview-blob-download/android/app/src/main/AndroidManifest.xml:7:18-72
+20    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+20-->/Users/mayank/Desktop/flutter-webview-blob-download/android/app/src/main/AndroidManifest.xml:8:5-78
+20-->/Users/mayank/Desktop/flutter-webview-blob-download/android/app/src/main/AndroidManifest.xml:8:22-76
+21    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+21-->/Users/mayank/Desktop/flutter-webview-blob-download/android/app/src/main/AndroidManifest.xml:8:79-154
+21-->/Users/mayank/Desktop/flutter-webview-blob-download/android/app/src/main/AndroidManifest.xml:8:96-152
+22
+23    <queries>
+23-->[:flutter_inappwebview] /Users/mayank/Desktop/flutter-webview-blob-download/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-13:15
+24        <intent>
+24-->[:flutter_inappwebview] /Users/mayank/Desktop/flutter-webview-blob-download/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-12:18
+25            <action android:name="android.support.customtabs.action.CustomTabsService" />
+25-->[:flutter_inappwebview] /Users/mayank/Desktop/flutter-webview-blob-download/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-90
+25-->[:flutter_inappwebview] /Users/mayank/Desktop/flutter-webview-blob-download/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:11:21-87
+26        </intent>
+27        <intent>
+27-->[:flutter_downloader] /Users/mayank/Desktop/flutter-webview-blob-download/build/flutter_downloader/intermediates/merged_manifest/debug/AndroidManifest.xml:11:9-13:18
+28            <action android:name="android.intent.action.VIEW" />
+28-->[:flutter_downloader] /Users/mayank/Desktop/flutter-webview-blob-download/build/flutter_downloader/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-65
+28-->[:flutter_downloader] /Users/mayank/Desktop/flutter-webview-blob-download/build/flutter_downloader/intermediates/merged_manifest/debug/AndroidManifest.xml:12:21-62
+29        </intent>
+30    </queries>
+31
+32    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+32-->[:flutter_downloader] /Users/mayank/Desktop/flutter-webview-blob-download/build/flutter_downloader/intermediates/merged_manifest/debug/AndroidManifest.xml:16:5-77
+32-->[:flutter_downloader] /Users/mayank/Desktop/flutter-webview-blob-download/build/flutter_downloader/intermediates/merged_manifest/debug/AndroidManifest.xml:16:22-74
+33    <uses-permission android:name="android.permission.WAKE_LOCK" />
+33-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:25:5-68
+33-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:25:22-65
+34    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+34-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:27:5-81
+34-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:27:22-78
+35    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+35-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:28:5-77
+35-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:28:22-74
+36
+37    <permission
+37-->[androidx.core:core:1.9.0] /Users/mayank/.gradle/caches/transforms-3/5f80b20db3afa86c72a9766b008d752d/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
+38        android:name="com.example.webview_in_flutter.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+38-->[androidx.core:core:1.9.0] /Users/mayank/.gradle/caches/transforms-3/5f80b20db3afa86c72a9766b008d752d/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
+39        android:protectionLevel="signature" />
+39-->[androidx.core:core:1.9.0] /Users/mayank/.gradle/caches/transforms-3/5f80b20db3afa86c72a9766b008d752d/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+40
+41    <uses-permission android:name="com.example.webview_in_flutter.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+41-->[androidx.core:core:1.9.0] /Users/mayank/.gradle/caches/transforms-3/5f80b20db3afa86c72a9766b008d752d/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
+41-->[androidx.core:core:1.9.0] /Users/mayank/.gradle/caches/transforms-3/5f80b20db3afa86c72a9766b008d752d/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+42
+43    <application
+44        android:name="android.app.Application"
+45        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+45-->[androidx.core:core:1.9.0] /Users/mayank/.gradle/caches/transforms-3/5f80b20db3afa86c72a9766b008d752d/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
+46        android:debuggable="true"
+47        android:icon="@mipmap/ic_launcher"
+48        android:label="flutter_webview" >
+49        <activity
+50            android:name="com.example.flutter_webview.MainActivity"
+51            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+52            android:exported="true"
+53            android:hardwareAccelerated="true"
+54            android:launchMode="singleTop"
+55            android:theme="@style/LaunchTheme"
+56            android:windowSoftInputMode="adjustResize" >
+57
+58            <!--
+59                 Specifies an Android theme to apply to this Activity as soon as
+60                 the Android process has started. This theme is visible to the user
+61                 while the Flutter UI initializes. After that, this theme continues
+62                 to determine the Window background behind the Flutter UI.
+63            -->
+64            <meta-data
+65                android:name="io.flutter.embedding.android.NormalTheme"
+66                android:resource="@style/NormalTheme" />
+67
+68            <intent-filter>
+69                <action android:name="android.intent.action.MAIN" />
+70
+71                <category android:name="android.intent.category.LAUNCHER" />
+72            </intent-filter>
+73        </activity>
+74        <!--
+75             Don't delete the meta-data below.
+76             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+77        -->
+78        <meta-data
+79            android:name="flutterEmbedding"
+80            android:value="2" />
+81
+82        <provider
+83            android:name="vn.hunghd.flutterdownloader.DownloadedFileProvider"
+84            android:authorities="com.example.webview_in_flutter.flutter_downloader.provider"
+85            android:exported="false"
+86            android:grantUriPermissions="true" >
+87            <meta-data
+87-->[:open_file] /Users/mayank/Desktop/flutter-webview-blob-download/build/open_file/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-19:53
+88                android:name="android.support.FILE_PROVIDER_PATHS"
+88-->[:open_file] /Users/mayank/Desktop/flutter-webview-blob-download/build/open_file/intermediates/merged_manifest/debug/AndroidManifest.xml:18:17-67
+89                android:resource="@xml/provider_paths" />
+89-->[:open_file] /Users/mayank/Desktop/flutter-webview-blob-download/build/open_file/intermediates/merged_manifest/debug/AndroidManifest.xml:19:17-50
+90        </provider>
+91
+92        <activity
+92-->[:flutter_inappwebview] /Users/mayank/Desktop/flutter-webview-blob-download/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:16:9-20:47
+93            android:name="com.pichillilorenzo.flutter_inappwebview.in_app_browser.InAppBrowserActivity"
+93-->[:flutter_inappwebview] /Users/mayank/Desktop/flutter-webview-blob-download/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-104
+94            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|layoutDirection|fontScale|screenLayout|density"
+94-->[:flutter_inappwebview] /Users/mayank/Desktop/flutter-webview-blob-download/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:18:13-137
+95            android:exported="false"
+95-->[:flutter_inappwebview] /Users/mayank/Desktop/flutter-webview-blob-download/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:19:13-37
+96            android:theme="@style/AppTheme" />
+96-->[:flutter_inappwebview] /Users/mayank/Desktop/flutter-webview-blob-download/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-44
+97        <activity
+97-->[:flutter_inappwebview] /Users/mayank/Desktop/flutter-webview-blob-download/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:21:9-24:55
+98            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ChromeCustomTabsActivity"
+98-->[:flutter_inappwebview] /Users/mayank/Desktop/flutter-webview-blob-download/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:22:13-112
+99            android:exported="false"
+99-->[:flutter_inappwebview] /Users/mayank/Desktop/flutter-webview-blob-download/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:23:13-37
+100            android:theme="@style/ThemeTransparent" />
+100-->[:flutter_inappwebview] /Users/mayank/Desktop/flutter-webview-blob-download/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:24:13-52
+101        <activity
+101-->[:flutter_inappwebview] /Users/mayank/Desktop/flutter-webview-blob-download/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:25:9-28:55
+102            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.TrustedWebActivity"
+102-->[:flutter_inappwebview] /Users/mayank/Desktop/flutter-webview-blob-download/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:26:13-106
+103            android:exported="false"
+103-->[:flutter_inappwebview] /Users/mayank/Desktop/flutter-webview-blob-download/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:27:13-37
+104            android:theme="@style/ThemeTransparent" />
+104-->[:flutter_inappwebview] /Users/mayank/Desktop/flutter-webview-blob-download/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:28:13-52
+105        <activity
+105-->[:flutter_inappwebview] /Users/mayank/Desktop/flutter-webview-blob-download/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:29:9-33:55
+106            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ChromeCustomTabsActivitySingleInstance"
+106-->[:flutter_inappwebview] /Users/mayank/Desktop/flutter-webview-blob-download/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:30:13-126
+107            android:exported="false"
+107-->[:flutter_inappwebview] /Users/mayank/Desktop/flutter-webview-blob-download/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:31:13-37
+108            android:launchMode="singleInstance"
+108-->[:flutter_inappwebview] /Users/mayank/Desktop/flutter-webview-blob-download/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:32:13-48
+109            android:theme="@style/ThemeTransparent" />
+109-->[:flutter_inappwebview] /Users/mayank/Desktop/flutter-webview-blob-download/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:33:13-52
+110        <activity
+110-->[:flutter_inappwebview] /Users/mayank/Desktop/flutter-webview-blob-download/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:34:9-38:55
+111            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.TrustedWebActivitySingleInstance"
+111-->[:flutter_inappwebview] /Users/mayank/Desktop/flutter-webview-blob-download/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:35:13-120
+112            android:exported="false"
+112-->[:flutter_inappwebview] /Users/mayank/Desktop/flutter-webview-blob-download/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:36:13-37
+113            android:launchMode="singleInstance"
+113-->[:flutter_inappwebview] /Users/mayank/Desktop/flutter-webview-blob-download/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:37:13-48
+114            android:theme="@style/ThemeTransparent" />
+114-->[:flutter_inappwebview] /Users/mayank/Desktop/flutter-webview-blob-download/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:38:13-52
+115
+116        <receiver
+116-->[:flutter_inappwebview] /Users/mayank/Desktop/flutter-webview-blob-download/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:40:9-43:40
+117            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ActionBroadcastReceiver"
+117-->[:flutter_inappwebview] /Users/mayank/Desktop/flutter-webview-blob-download/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:41:13-111
+118            android:enabled="true"
+118-->[:flutter_inappwebview] /Users/mayank/Desktop/flutter-webview-blob-download/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:42:13-35
+119            android:exported="false" />
+119-->[:flutter_inappwebview] /Users/mayank/Desktop/flutter-webview-blob-download/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:43:13-37
+120
+121        <meta-data
+121-->[:flutter_inappwebview] /Users/mayank/Desktop/flutter-webview-blob-download/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:45:9-47:36
+122            android:name="io.flutter.embedded_views_preview"
+122-->[:flutter_inappwebview] /Users/mayank/Desktop/flutter-webview-blob-download/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:46:13-61
+123            android:value="true" />
+123-->[:flutter_inappwebview] /Users/mayank/Desktop/flutter-webview-blob-download/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:47:13-33
+124
+125        <provider
+125-->[:open_file] /Users/mayank/Desktop/flutter-webview-blob-download/build/open_file/intermediates/merged_manifest/debug/AndroidManifest.xml:11:9-20:20
+126            android:name="com.crazecoder.openfile.FileProvider"
+126-->[:open_file] /Users/mayank/Desktop/flutter-webview-blob-download/build/open_file/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-64
+127            android:authorities="com.example.webview_in_flutter.fileProvider.com.crazecoder.openfile"
+127-->[:open_file] /Users/mayank/Desktop/flutter-webview-blob-download/build/open_file/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-88
+128            android:exported="false"
+128-->[:open_file] /Users/mayank/Desktop/flutter-webview-blob-download/build/open_file/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-37
+129            android:grantUriPermissions="true" >
+129-->[:open_file] /Users/mayank/Desktop/flutter-webview-blob-download/build/open_file/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-47
+130            <meta-data
+130-->[:open_file] /Users/mayank/Desktop/flutter-webview-blob-download/build/open_file/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-19:53
+131                android:name="android.support.FILE_PROVIDER_PATHS"
+131-->[:open_file] /Users/mayank/Desktop/flutter-webview-blob-download/build/open_file/intermediates/merged_manifest/debug/AndroidManifest.xml:18:17-67
+132                android:resource="@xml/filepaths" />
+132-->[:open_file] /Users/mayank/Desktop/flutter-webview-blob-download/build/open_file/intermediates/merged_manifest/debug/AndroidManifest.xml:19:17-50
+133        </provider>
+134
+135        <uses-library
+135-->[androidx.window:window:1.0.0-beta04] /Users/mayank/.gradle/caches/transforms-3/dee59bb480020f42d53c2ea15e4501f7/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+136            android:name="androidx.window.extensions"
+136-->[androidx.window:window:1.0.0-beta04] /Users/mayank/.gradle/caches/transforms-3/dee59bb480020f42d53c2ea15e4501f7/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+137            android:required="false" />
+137-->[androidx.window:window:1.0.0-beta04] /Users/mayank/.gradle/caches/transforms-3/dee59bb480020f42d53c2ea15e4501f7/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+138        <uses-library
+138-->[androidx.window:window:1.0.0-beta04] /Users/mayank/.gradle/caches/transforms-3/dee59bb480020f42d53c2ea15e4501f7/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+139            android:name="androidx.window.sidecar"
+139-->[androidx.window:window:1.0.0-beta04] /Users/mayank/.gradle/caches/transforms-3/dee59bb480020f42d53c2ea15e4501f7/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+140            android:required="false" />
+140-->[androidx.window:window:1.0.0-beta04] /Users/mayank/.gradle/caches/transforms-3/dee59bb480020f42d53c2ea15e4501f7/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+141
+142        <provider
+142-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:31:9-39:20
+143            android:name="androidx.startup.InitializationProvider"
+143-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:32:13-67
+144            android:authorities="com.example.webview_in_flutter.androidx-startup"
+144-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:33:13-68
+145            android:exported="false" >
+145-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:34:13-37
+146            <meta-data
+146-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:36:13-38:52
+147                android:name="androidx.work.WorkManagerInitializer"
+147-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:37:17-68
+148                android:value="androidx.startup" />
+148-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:38:17-49
+149            <meta-data
+149-->[androidx.emoji2:emoji2:1.2.0] /Users/mayank/.gradle/caches/transforms-3/f3da131123e9b4eccc244f6ad91f009f/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+150                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+150-->[androidx.emoji2:emoji2:1.2.0] /Users/mayank/.gradle/caches/transforms-3/f3da131123e9b4eccc244f6ad91f009f/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
+151                android:value="androidx.startup" />
+151-->[androidx.emoji2:emoji2:1.2.0] /Users/mayank/.gradle/caches/transforms-3/f3da131123e9b4eccc244f6ad91f009f/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
+152            <meta-data
+152-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/mayank/.gradle/caches/transforms-3/bfb294eadd9142ad90bb62295accd8ec/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+153                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+153-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/mayank/.gradle/caches/transforms-3/bfb294eadd9142ad90bb62295accd8ec/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+154                android:value="androidx.startup" />
+154-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/mayank/.gradle/caches/transforms-3/bfb294eadd9142ad90bb62295accd8ec/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+155        </provider>
+156
+157        <service
+157-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:41:9-46:35
+158            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+158-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:42:13-88
+159            android:directBootAware="false"
+159-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:43:13-44
+160            android:enabled="@bool/enable_system_alarm_service_default"
+160-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:44:13-72
+161            android:exported="false" />
+161-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:45:13-37
+162        <service
+162-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:47:9-53:35
+163            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+163-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:48:13-84
+164            android:directBootAware="false"
+164-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:49:13-44
+165            android:enabled="@bool/enable_system_job_service_default"
+165-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:50:13-70
+166            android:exported="true"
+166-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:51:13-36
+167            android:permission="android.permission.BIND_JOB_SERVICE" />
+167-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:52:13-69
+168        <service
+168-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:54:9-59:35
+169            android:name="androidx.work.impl.foreground.SystemForegroundService"
+169-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:55:13-81
+170            android:directBootAware="false"
+170-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:56:13-44
+171            android:enabled="@bool/enable_system_foreground_service_default"
+171-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:57:13-77
+172            android:exported="false" />
+172-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:58:13-37
+173
+174        <receiver
+174-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:61:9-66:35
+175            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+175-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:62:13-88
+176            android:directBootAware="false"
+176-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:63:13-44
+177            android:enabled="true"
+177-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:64:13-35
+178            android:exported="false" />
+178-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:65:13-37
+179        <receiver
+179-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:67:9-77:20
+180            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+180-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:68:13-106
+181            android:directBootAware="false"
+181-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:69:13-44
+182            android:enabled="false"
+182-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:70:13-36
+183            android:exported="false" >
+183-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:71:13-37
+184            <intent-filter>
+184-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:73:13-76:29
+185                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+185-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:74:17-87
+185-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:74:25-84
+186                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+186-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:75:17-90
+186-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:75:25-87
+187            </intent-filter>
+188        </receiver>
+189        <receiver
+189-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:78:9-88:20
+190            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+190-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:79:13-104
+191            android:directBootAware="false"
+191-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:80:13-44
+192            android:enabled="false"
+192-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:81:13-36
+193            android:exported="false" >
+193-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:82:13-37
+194            <intent-filter>
+194-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:84:13-87:29
+195                <action android:name="android.intent.action.BATTERY_OKAY" />
+195-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:85:17-77
+195-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:85:25-74
+196                <action android:name="android.intent.action.BATTERY_LOW" />
+196-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:86:17-76
+196-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:86:25-73
+197            </intent-filter>
+198        </receiver>
+199        <receiver
+199-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:89:9-99:20
+200            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+200-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:90:13-104
+201            android:directBootAware="false"
+201-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:91:13-44
+202            android:enabled="false"
+202-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:92:13-36
+203            android:exported="false" >
+203-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:93:13-37
+204            <intent-filter>
+204-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:95:13-98:29
+205                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+205-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:96:17-83
+205-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:96:25-80
+206                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+206-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:97:17-82
+206-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:97:25-79
+207            </intent-filter>
+208        </receiver>
+209        <receiver
+209-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:100:9-109:20
+210            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+210-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:101:13-103
+211            android:directBootAware="false"
+211-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:102:13-44
+212            android:enabled="false"
+212-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:103:13-36
+213            android:exported="false" >
+213-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:104:13-37
+214            <intent-filter>
+214-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:106:13-108:29
+215                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+215-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:107:17-79
+215-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:107:25-76
+216            </intent-filter>
+217        </receiver>
+218        <receiver
+218-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:110:9-121:20
+219            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+219-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:111:13-88
+220            android:directBootAware="false"
+220-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:112:13-44
+221            android:enabled="false"
+221-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:113:13-36
+222            android:exported="false" >
+222-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:114:13-37
+223            <intent-filter>
+223-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:116:13-120:29
+224                <action android:name="android.intent.action.BOOT_COMPLETED" />
+224-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:117:17-79
+224-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:117:25-76
+225                <action android:name="android.intent.action.TIME_SET" />
+225-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:118:17-73
+225-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:118:25-70
+226                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+226-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:119:17-81
+226-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:119:25-78
+227            </intent-filter>
+228        </receiver>
+229        <receiver
+229-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:122:9-131:20
+230            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+230-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:123:13-99
+231            android:directBootAware="false"
+231-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:124:13-44
+232            android:enabled="@bool/enable_system_alarm_service_default"
+232-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:125:13-72
+233            android:exported="false" >
+233-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:126:13-37
+234            <intent-filter>
+234-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:128:13-130:29
+235                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+235-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:129:17-98
+235-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:129:25-95
+236            </intent-filter>
+237        </receiver>
+238        <receiver
+238-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:132:9-142:20
+239            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+239-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:133:13-78
+240            android:directBootAware="false"
+240-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:134:13-44
+241            android:enabled="true"
+241-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:135:13-35
+242            android:exported="true"
+242-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:136:13-36
+243            android:permission="android.permission.DUMP" >
+243-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:137:13-57
+244            <intent-filter>
+244-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:139:13-141:29
+245                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+245-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:140:17-88
+245-->[androidx.work:work-runtime:2.7.1] /Users/mayank/.gradle/caches/transforms-3/f3af5117afa6a115db8ed88b75db708a/transformed/work-runtime-2.7.1/AndroidManifest.xml:140:25-85
+246            </intent-filter>
+247        </receiver>
+248
+249        <service
+249-->[androidx.room:room-runtime:2.2.5] /Users/mayank/.gradle/caches/transforms-3/824ecf9ce9de0af86259c87a99bba9f9/transformed/room-runtime-2.2.5/AndroidManifest.xml:25:9-28:40
+250            android:name="androidx.room.MultiInstanceInvalidationService"
+250-->[androidx.room:room-runtime:2.2.5] /Users/mayank/.gradle/caches/transforms-3/824ecf9ce9de0af86259c87a99bba9f9/transformed/room-runtime-2.2.5/AndroidManifest.xml:26:13-74
+251            android:directBootAware="true"
+251-->[androidx.room:room-runtime:2.2.5] /Users/mayank/.gradle/caches/transforms-3/824ecf9ce9de0af86259c87a99bba9f9/transformed/room-runtime-2.2.5/AndroidManifest.xml:27:13-43
+252            android:exported="false" />
+252-->[androidx.room:room-runtime:2.2.5] /Users/mayank/.gradle/caches/transforms-3/824ecf9ce9de0af86259c87a99bba9f9/transformed/room-runtime-2.2.5/AndroidManifest.xml:28:13-37
+253    </application>
+254
+255</manifest>
